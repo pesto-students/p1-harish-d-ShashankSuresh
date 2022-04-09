@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+body > div {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  flex-wrap: wrap;
+}
+
+.main > div {
+  width: 50%;
+  height: 50%;
+}
+/* .main {
+  transition-property: all;
+} */
+/* .main :hover {
+  transform: translate(200px, 500px);
+} */
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: yellow;
+}
+.three {
+  background-color: blue;
+}
+.four {
+  background-color: green;
+}
