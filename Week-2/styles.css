@@ -9,40 +9,43 @@ body > div {
   align-content: flex-start;
   width: 200px;
   height: 200px;
-  background-color: aqua;
   flex-wrap: wrap;
+  text-align: center;
+  position: relative;
 }
-
+.main > h2 {
+  position: absolute;
+  top: 86px;
+  left: 86px;
+  margin: 0;
+}
 .main > div {
   width: 50%;
   height: 50%;
 }
-.one {
+
+.sectionone {
   background-color: red;
-  transition: transform 1s linear;
   transform-origin: top left;
-  transform-style: preserve-3D;
 }
 
-.two {
+.sectiontwo {
   background-color: yellow;
-  transition: transform 1s linear;
   transform-origin: top right;
-  transform-style: preserve-3D;
 }
-.three {
+.sectionthree {
   background-color: blue;
-  transition: transform 1s linear;
   transform-origin: bottom left;
-  transform-style: preserve-3D;
 }
-.four {
+.sectionfour {
   background-color: green;
-  transition: transform 1s linear;
   transform-origin: bottom right;
-  transform-style: preserve-3D;
 }
 
+.transition {
+  transition: transform 1s linear;
+  transform-style: preserve-3D;
+}
 .main:hover .rotateright {
   transform: rotate(90deg);
 }
